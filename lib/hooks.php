@@ -15,7 +15,7 @@
  */
 function tell_a_friend_register_entity_menu_hook($hook, $type, $return_value, $params) {
 	
-	if (elgg_in_context("widgets")) {
+	if (elgg_in_context("widgets") || elgg_in_context("livesearch")) {
 		return $return_value;
 	}
 	
