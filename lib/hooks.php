@@ -41,7 +41,6 @@ function tell_a_friend_register_entity_menu_hook($hook, $type, $return_value, $p
 		"name" => "tell_a_friend",
 		"text" => elgg_view_icon("share"),
 		"href" => "tell_a_friend/share/" . $entity->getGUID(),
-		"title" => elgg_echo("tell_a_friend:share"),
 		"link_class" => "elgg-lightbox",
 		"priority" => 200
 	));
