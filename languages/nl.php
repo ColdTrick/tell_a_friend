@@ -1,5 +1,11 @@
 <?php
 $language = array (
+  'tell_a_friend:share:subject:default' => 'Suggestie van %s',
+  'tell_a_friend:share:message:default' => 'Hallo,
+
+%s raad je aan om eens te kijken naar: %s
+
+%s',
   'tell_a_friend:share' => 'Tip een vriend',
   'tell_a_friend:share_title' => 'Tip een vriend',
   'tell_a_friend:share:recipient' => 'Ontvanger(s)',

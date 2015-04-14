@@ -5,12 +5,19 @@ if (empty($entity) || !elgg_instanceof($entity)) {
 	return;
 }
 
-$subject = $entity->title;
-if (empty($subject)) {
-	$subject = $entity->name;
-}
+$user = elgg_get_logged_in_user_entity();
 
-$message = $entity->getURL();
+$subject = elgg_echo("tell_a_friend:share:subject:default", array($user->name));
+
+$title = $entity->title;
+if (empty($title)) {
+	$title = $entity->name;
+}
+$message = elgg_echo("tell_a_friend:share:message:default", array(
+	$user->name,
+	$title,
+	$entity->getURL()
+));
 
 echo "<div>";
 echo "<label>" . elgg_echo("tell_a_friend:share:recipient") . "*</label>";
