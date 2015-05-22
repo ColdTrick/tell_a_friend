@@ -1,0 +1,17 @@
+{
+	"name": "coldtrick/tell_a_friend",
+	"description": "Share content with another user on the community",
+	"type": "elgg-plugin",
+	"keywords": ["elgg", "plugin", "share"],
+	"license": "GPL-2.0",
+	"support": {
+		"source": "https://github.com/ColdTrick/tell_a_friend",
+		"issues": "https://github.com/ColdTrick/tell_a_friend"
+	},
+	"require": {
+		"composer/installers": "^1.0.8"
+	},
+	"require-dev": {
+		"coldtrick/sniffs": "dev-master"
+	}
+}
