@@ -1,5 +1,6 @@
 <?php
-$language = array (
+
+return [
   'tell_a_friend:share:subject:default' => 'Suggestie van %s',
   'tell_a_friend:share:message:default' => 'Hallo,
 
@@ -16,5 +17,4 @@ $language = array (
   'tell_a_friend:action:share:error:subject' => 'Geef een onderwerp op',
   'tell_a_friend:action:share:error:message' => 'Geef een bericht op',
   'tell_a_friend:action:share:success' => 'Je bericht is verstuurd',
-);
-add_translation("nl", $language);
+];

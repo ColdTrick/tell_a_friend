@@ -1,6 +1,6 @@
 <?php
 
-$english = array(
+return [
 	'tell_a_friend:share' => "Tell a friend",
 	
 	'tell_a_friend:share_title' => "Tell a friend",
@@ -19,6 +19,4 @@ $english = array(
 	'tell_a_friend:action:share:error:subject' => "Please provide a subject",
 	'tell_a_friend:action:share:error:message' => "Please provide a message",
 	'tell_a_friend:action:share:success' => "Your message was sent",
-);
-
-add_translation("en", $english);
+];
