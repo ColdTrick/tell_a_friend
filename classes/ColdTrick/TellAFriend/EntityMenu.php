@@ -24,6 +24,11 @@ class EntityMenu {
 			return;
 		}
 		
+		if (!is_registered_entity_type($entity->getType(), $entity->getSubtype())) {
+			// limit to searchable entities
+			return;
+		}
+		
 		$result = $hook->getValue();
 		
 		$result[] = \ElggMenuItem::factory([
