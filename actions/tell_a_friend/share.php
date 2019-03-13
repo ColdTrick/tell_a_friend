@@ -11,11 +11,6 @@ if (!is_array($recipients)) {
 
 foreach ($recipients as $index => $guid) {
 	$guid = (int) $guid;
-	if ($guid == elgg_get_logged_in_user_guid()) {
-		// don't send to yourself
-		unset($recipients[$index]);
-	}
-	
 	if (!get_user($guid)) {
 		// not a user
 		unset($recipients[$index]);
