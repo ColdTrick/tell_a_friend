@@ -21,7 +21,4 @@ function tell_a_friend_init() {
 	
 	// register plugin hooks
 	elgg_register_plugin_hook_handler("register", "menu:entity", "tell_a_friend_register_entity_menu_hook");
-	
-	// register actions
-	elgg_register_action("tell_a_friend/share", dirname(__FILE__) . "/actions/share.php");
 }
