@@ -34,6 +34,9 @@ class EntityMenu {
 				'guid' => $entity->guid,
 			]),
 			'link_class' => 'elgg-lightbox',
+			'data-colorbox-opts' => json_encode([
+				'width' => '500px',
+			]),
 		]);
 		
 		return $result;
