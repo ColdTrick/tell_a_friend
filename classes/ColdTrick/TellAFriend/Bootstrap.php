@@ -23,6 +23,8 @@ class Bootstrap extends DefaultPluginBootstrap {
 	 */
 	protected function initHooks() {
 		$hooks = $this->elgg()->hooks;
+		
+		$hooks->registerHandler('register', 'menu:entity', __NAMESPACE__ . '\EntityMenu::registerShare');
 	}
 	
 	/**
