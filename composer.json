@@ -3,7 +3,7 @@
 	"description": "Share content with another user on the community",
 	"type": "elgg-plugin",
 	"keywords": ["elgg", "plugin", "share"],
-	"license": "GPL-2.0",
+	"license": "GPL-2.0-only",
 	"support": {
 		"source": "https://github.com/ColdTrick/tell_a_friend",
 		"issues": "https://github.com/ColdTrick/tell_a_friend/issues"
