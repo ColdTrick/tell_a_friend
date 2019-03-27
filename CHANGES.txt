@@ -1,6 +1,14 @@
 Version history
 ===============
 
+2.0 (2019-03-27):
+
+- changed: increased minimal Elgg version to 3.0
+- changed: notification now to mail
+- changed: page handler to ajax view
+- fixed: only act on searchable entities
+- removed: restriction to not send message to yourself
+
 1.0 (2019-03-13):
 
 - initial release
