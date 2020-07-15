@@ -40,7 +40,7 @@ class EntityMenu {
 			]),
 			'link_class' => 'elgg-lightbox',
 			'data-colorbox-opts' => json_encode([
-				'width' => '500px',
+				'width' => '750px',
 			]),
 		]);
 		

@@ -1,11 +1,13 @@
 <?php
 
 return [
-  'tell_a_friend:share:subject:default' => 'Suggestie van %s',
+  'tell_a_friend:share:subject:default' => '%s tipt %s: %s',
   'tell_a_friend:share:message:default' => 'Hallo,
 
-%s raadt je aan om eens te kijken naar: %s
-
+%s raadt je aan om eens te kijken naar:
+%s
+%s
+Om de content te bekijken en te reageren, klik hier:
 %s',
   'tell_a_friend:share' => 'Tip een vriend',
   'tell_a_friend:share_title' => 'Tip een vriend',

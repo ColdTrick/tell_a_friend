@@ -3,6 +3,7 @@
 $recipients = get_input('members');
 $subject = get_input('subject');
 $message = get_input('message');
+$guid = (int) get_input('guid');
 
 // only send to users
 if (!is_array($recipients)) {
@@ -31,6 +32,10 @@ if (empty($message)) {
 	return elgg_error_response(elgg_echo('tell_a_friend:action:share:error:message'));
 }
 
-notify_user($recipients, elgg_get_logged_in_user_guid(), $subject, $message, [], ['email']);
+$params = [
+	'object' => get_entity($guid),
+	'action' => 'tell_a_friend',
+];
+notify_user($recipients, elgg_get_logged_in_user_guid(), $subject, $message, $params, ['email']);
 
 return elgg_ok_response('', elgg_echo('tell_a_friend:action:share:success'));

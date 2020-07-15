@@ -6,12 +6,14 @@ return [
 	'tell_a_friend:share_title' => "Tell a friend",
 	'tell_a_friend:share:recipient' => "Recipient(s)",
 	'tell_a_friend:share:subject' => "Subject",
-	'tell_a_friend:share:subject:default' => "Suggestion from %s",
+	'tell_a_friend:share:subject:default' => "%s suggests %s: %s",
 	'tell_a_friend:share:message' => "Message",
 	'tell_a_friend:share:message:default' => "Hi,
 
-%s suggests you have a look at: %s
-
+%s suggests you have a look at:
+%s
+%s
+To view the content and comment, click here:
 %s",
 	'tell_a_friend:share:required' => "Fields marked with a * are required",
 	
