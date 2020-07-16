@@ -8,7 +8,7 @@ if (!$entity instanceof ElggEntity) {
 $user = elgg_get_logged_in_user_entity();
 
 $title = $entity->getDisplayName() ?: $entity->description;
-$title = elgg_get_excerpt($title, 100);
+$title = elgg_get_excerpt($title, 25);
 
 if (elgg_language_key_exists("item:{$entity->getType()}:{$entity->getSubtype()}")) {
 	$type = elgg_echo("item:{$entity->getType()}:{$entity->getSubtype()}");
