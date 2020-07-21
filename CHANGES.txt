@@ -1,6 +1,10 @@
 Version history
 ===============
 
+2.1 (2020-07-21):
+
+- changed: notification default content
+
 2.0 (2019-03-27):
 
 - changed: increased minimal Elgg version to 3.0
