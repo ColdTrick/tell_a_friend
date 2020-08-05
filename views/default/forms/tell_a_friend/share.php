@@ -54,7 +54,7 @@ echo elgg_view_field([
 	'#type' => 'plaintext',
 	'#label' => elgg_echo('tell_a_friend:share:message'),
 	'name' => 'message',
-	'value' => $message,
+	'value' => html_entity_decode($message),
 	'required' => true,
 ]);
 
