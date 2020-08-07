@@ -29,6 +29,9 @@ $message = elgg_echo('tell_a_friend:share:message:default', [
 	$entity->getURL(),
 ]);
 
+$message = htmlspecialchars_decode($message, ENT_QUOTES);
+$message = html_entity_decode($message);
+
 echo elgg_view_field([
 	'#type' => 'hidden',
 	'name' => 'guid',
@@ -54,7 +57,7 @@ echo elgg_view_field([
 	'#type' => 'plaintext',
 	'#label' => elgg_echo('tell_a_friend:share:message'),
 	'name' => 'message',
-	'value' => html_entity_decode($message),
+	'value' => $message,
 	'required' => true,
 ]);
 
