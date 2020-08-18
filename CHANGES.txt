@@ -1,6 +1,11 @@
 Version history
 ===============
 
+2.1.1 (2020-08-18):
+
+- fixed: prevent double encoding of message contents in plain text input
+- fixed: prevent issues with htmlentities encoded content
+
 2.1 (2020-07-21):
 
 - changed: notification default content
