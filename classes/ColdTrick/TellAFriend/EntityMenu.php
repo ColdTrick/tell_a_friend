@@ -9,7 +9,7 @@ class EntityMenu {
 	/**
 	 * Add share link to entity menu
 	 *
-	 * @param \Elgg\Hook $hook 'regsiter', 'menu:entity'
+	 * @param \Elgg\Hook $hook 'register', 'menu:entity'
 	 *
 	 * @return void|MenuItems
 	 */
@@ -24,7 +24,7 @@ class EntityMenu {
 			return;
 		}
 		
-		if (!is_registered_entity_type($entity->getType(), $entity->getSubtype())) {
+		if (!$entity->hasCapability('searchable')) {
 			// limit to searchable entities
 			return;
 		}
