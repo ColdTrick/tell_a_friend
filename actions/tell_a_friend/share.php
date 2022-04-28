@@ -10,9 +10,9 @@ if (!is_array($recipients)) {
 	$recipients = [$recipients];
 }
 
-foreach ($recipients as $index => $guid) {
-	$guid = (int) $guid;
-	if (!get_user($guid)) {
+foreach ($recipients as $index => $user_guid) {
+	$user_guid = (int) $user_guid;
+	if (!get_user($user_guid)) {
 		// not a user
 		unset($recipients[$index]);
 	}
