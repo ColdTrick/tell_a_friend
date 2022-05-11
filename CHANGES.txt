@@ -1,6 +1,10 @@
 Version history
 ===============
 
+4.0.1 (2022-05-11):
+
+- fixed: no longer leak wrong object guid
+
 4.0 (2022-02-16):
 
 - changed: updated code to use new Elgg 4.1 entity capabilities
