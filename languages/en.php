@@ -8,9 +8,7 @@ return [
 	'tell_a_friend:share:subject' => "Subject",
 	'tell_a_friend:share:subject:default' => "%s suggests %s: %s",
 	'tell_a_friend:share:message' => "Message",
-	'tell_a_friend:share:message:default' => "Hi,
-
-%s suggests you have a look at:
+	'tell_a_friend:share:message:default' => "%s suggests you have a look at:
 %s
 %s
 To view the content and comment, click here:

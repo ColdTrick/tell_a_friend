@@ -2,9 +2,7 @@
 
 return [
   'tell_a_friend:share:subject:default' => '%s tipt %s: %s',
-  'tell_a_friend:share:message:default' => 'Hallo,
-
-%s raadt je aan om eens te kijken naar:
+  'tell_a_friend:share:message:default' => '%s raadt je aan om eens te kijken naar:
 %s
 %s
 Om de content te bekijken en te reageren, klik hier:
