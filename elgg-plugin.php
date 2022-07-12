@@ -2,7 +2,7 @@
 
 return [
 	'plugin' => [
-		'version' => '4.0.1',
+		'version' => '4.0.2',
 	],
 	'actions' => [
 		'tell_a_friend/share' => [],
