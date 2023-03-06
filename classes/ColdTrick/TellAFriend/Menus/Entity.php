@@ -1,35 +1,38 @@
 <?php
 
-namespace ColdTrick\TellAFriend;
+namespace ColdTrick\TellAFriend\Menus;
 
 use Elgg\Menu\MenuItems;
 
-class EntityMenu {
+/**
+ * Add menu items to the entity menu
+ */
+class Entity {
 	
 	/**
 	 * Add share link to entity menu
 	 *
-	 * @param \Elgg\Hook $hook 'register', 'menu:entity'
+	 * @param \Elgg\Event $event 'register', 'menu:entity'
 	 *
-	 * @return void|MenuItems
+	 * @return null|MenuItems
 	 */
-	public static function registerShare(\Elgg\Hook $hook) {
-		
+	public static function registerShare(\Elgg\Event $event): ?MenuItems {
 		if (!elgg_is_logged_in()) {
-			return;
+			return null;
 		}
 		
-		$entity = $hook->getEntityParam();
+		$entity = $event->getEntityParam();
 		if (!$entity instanceof \ElggEntity) {
-			return;
+			return null;
 		}
 		
 		if (!$entity->hasCapability('searchable')) {
 			// limit to searchable entities
-			return;
+			return null;
 		}
 		
-		$result = $hook->getValue();
+		/* @var $result MenuItems */
+		$result = $event->getValue();
 		
 		$result[] = \ElggMenuItem::factory([
 			'name' => 'tell_a_friend',

@@ -7,10 +7,10 @@ return [
 	'actions' => [
 		'tell_a_friend/share' => [],
 	],
-	'hooks' => [
+	'events' => [
 		'register' => [
 			'menu:entity' => [
-				'ColdTrick\TellAFriend\EntityMenu::registerShare' => [],
+				'ColdTrick\TellAFriend\Menus\Entity::registerShare' => [],
 			],
 		],
 	],
