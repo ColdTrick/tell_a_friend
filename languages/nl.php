@@ -1,13 +1,16 @@
 <?php
+/**
+ * This file was created by Translation Editor v11.1
+ * On 2023-05-17 15:19
+ */
 
-return [
+return array (
   'tell_a_friend:share:subject:default' => '%s tipt %s: %s',
   'tell_a_friend:share:message:default' => '%s raadt je aan om eens te kijken naar:
 %s
 %s
 Om de content te bekijken en te reageren, klik hier:
 %s',
-  'tell_a_friend:share' => 'Tip een vriend',
   'tell_a_friend:share_title' => 'Tip een vriend',
   'tell_a_friend:share:recipient' => 'Ontvanger(s)',
   'tell_a_friend:share:subject' => 'Onderwerp',
@@ -17,4 +20,4 @@ Om de content te bekijken en te reageren, klik hier:
   'tell_a_friend:action:share:error:subject' => 'Geef een onderwerp op',
   'tell_a_friend:action:share:error:message' => 'Geef een bericht op',
   'tell_a_friend:action:share:success' => 'Je bericht is verstuurd',
-];
+);

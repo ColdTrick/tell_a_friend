@@ -1,8 +1,6 @@
 <?php
 
 return [
-	'tell_a_friend:share' => "Tell a friend",
-	
 	'tell_a_friend:share_title' => "Tell a friend",
 	'tell_a_friend:share:recipient' => "Recipient(s)",
 	'tell_a_friend:share:subject' => "Subject",
