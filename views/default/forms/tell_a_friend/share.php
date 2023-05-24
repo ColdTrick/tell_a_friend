@@ -25,7 +25,7 @@ $subject = elgg_echo('tell_a_friend:share:subject:default', [
 $message = elgg_echo('tell_a_friend:share:message:default', [
 	$user->getDisplayName(),
 	$entity->getDisplayName() ? PHP_EOL . $entity->getDisplayName() : '',
-	$entity->description ? elgg_get_excerpt($entity->description) . PHP_EOL : '',
+	$entity->description ? elgg_get_excerpt((string) $entity->description) . PHP_EOL : '',
 	$entity->getURL(),
 ]);
 
