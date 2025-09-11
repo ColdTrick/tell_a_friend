@@ -10,12 +10,9 @@ if (!is_array($recipients)) {
 	$recipients = [$recipients];
 }
 
-foreach ($recipients as $index => $user_guid) {
-	$user_guid = (int) $user_guid;
-	if (!get_user($user_guid)) {
-		// not a user
-		unset($recipients[$index]);
-	}
+$object = get_entity($guid);
+if (!$object instanceof \ElggEntity) {
+	return elgg_error_response(elgg_echo('error:missing_data'));
 }
 
 if (empty($recipients)) {
@@ -32,10 +29,17 @@ if (empty($message)) {
 	return elgg_error_response(elgg_echo('tell_a_friend:action:share:error:message'));
 }
 
-$params = [
-	'object' => get_entity($guid),
-	'action' => 'tell_a_friend',
-];
-notify_user($recipients, elgg_get_logged_in_user_guid(), $subject, $message, $params, ['email']);
+foreach ($recipients as $user_guid) {
+	$user = get_user((int) $user_guid);
+	if (!$user instanceof \ElggUser) {
+		continue;
+	}
+	
+	$user->notify('tell_a_friend', $object, [
+		'subject' => $subject,
+		'body' => $message,
+		'methods_override' => ['email'],
+	], elgg_get_logged_in_user_entity());
+}
 
 return elgg_ok_response('', elgg_echo('tell_a_friend:action:share:success'));
