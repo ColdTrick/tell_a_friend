@@ -11,7 +11,6 @@ return [
 %s
 To view the content and comment, click here:
 %s",
-	'tell_a_friend:share:required' => "Fields marked with a * are required",
 	
 	'tell_a_friend:action:share:error:recipients' => "Please enter at least 1 recipient",
 	'tell_a_friend:action:share:error:subject' => "Please provide a subject",

@@ -15,7 +15,6 @@ Om de content te bekijken en te reageren, klik hier:
   'tell_a_friend:share:recipient' => 'Ontvanger(s)',
   'tell_a_friend:share:subject' => 'Onderwerp',
   'tell_a_friend:share:message' => 'Bericht',
-  'tell_a_friend:share:required' => 'Velden gemarkeerd met een * zijn verplicht',
   'tell_a_friend:action:share:error:recipients' => 'Geef ten minste 1 ontvanger op',
   'tell_a_friend:action:share:error:subject' => 'Geef een onderwerp op',
   'tell_a_friend:action:share:error:message' => 'Geef een bericht op',
