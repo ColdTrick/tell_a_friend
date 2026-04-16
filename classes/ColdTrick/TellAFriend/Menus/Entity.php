@@ -31,14 +31,16 @@ class Entity {
 			return null;
 		}
 		
-		/* @var $result MenuItems */
+		/** @var MenuItems $result */
 		$result = $event->getValue();
 		
 		$result[] = \ElggMenuItem::factory([
 			'name' => 'tell_a_friend',
 			'icon' => 'share-alt-square',
 			'text' => elgg_echo('tell_a_friend:share_title'),
-			'href' => elgg_http_add_url_query_elements('ajax/view/tell_a_friend/share', [
+			'href' => elgg_generate_url('ajax', [
+				'type' => 'view',
+				'segments' => 'tell_a_friend/share',
 				'guid' => $entity->guid,
 			]),
 			'link_class' => 'elgg-lightbox',
